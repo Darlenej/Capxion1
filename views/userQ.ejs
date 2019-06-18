@@ -1,0 +1,54 @@
+!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="/publics/css/style.css"> 
+
+
+  </head>
+  <body>
+    <header>
+        <h1>Capxion</h1>
+        <p> Create your own capxions</p>
+    </header>
+   
+
+    <% for(let i = 0; i < myNotes.length; i++) { %>
+      <div class="card">
+        <div class="card-header">
+          Note <%= i + 1 %>
+
+          <button data-index="<%= i %>" class="btn-danger">Delete</button>
+        </div>
+        <div class="card-body">
+          <%= userQ[i] %>
+        </div>
+        <select class="styleform" id="otherThings" required>
+            <option>Other</option>
+            <option>Pick up dog from vet</option>
+            <option>Go to the grocery store</option>
+            <option class= newList value=""></option>
+          </select>
+          <!-- if( notes[i] ==="priority""important")
+          else() -->
+      </div>
+    <% } %>  
+
+     
+    <!-- <form method="POST"action="/notes">
+      <input type="text" name="note"></input>
+      <input class="btn btn-danger" type="submit" value="Delete" >
+ 
+  </form> -->
+
+  
+   
+
+    <form method="POST"action="/userQ">
+        <input type="text" name="note"></input>
+        <input class="btn btn-warning" type="submit" value="Save" >
+   
+    </form>
+    <script src="/publics/js/functionality.js"></script>
+  </body>
+</html>

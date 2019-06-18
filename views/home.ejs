@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- </head> -->
+
+<%- include("./header.ejs");%>
+
+
+
+<body>
+    <%- include("./label.ejs");%>
+
+<%- include('./nav.ejs');%>
+
+<div >
+<h3 style="text-align: center">Pick what category you are in the mood for</h3>
+</div>
+<br>
+<div class="container">    
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="panel panel-primary">
+          <div class="panel-heading">Inspirational</div>
+          <a href="/inspirational">
+          <div class="panel-body"><img src="/Photos/inspire.png" style="width:100%" alt="Inspirational Image"></div>
+          </a>
+          <div class="panel-footer">Inspire your timeline!</div>
+        </div>
+      </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-primary">
+        <div class="panel-heading">Funny</div>
+        <a href="/funny">
+        <div class="panel-body"><img src="/Photos/funny-ppl.png" style="width:100%" alt="Funny Image"></div>
+        </a>
+        <div class="panel-footer">Make someone laugh</div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-primary">
+        <div class="panel-heading">Travel</div>
+        <a href="/travel">
+        <div class="panel-body"><img src="/Photos/airplane.png" class="img-responsive" style="width:100%" alt="Travel Image"></div>
+       </a>
+        <div class="panel-footer">Take your timeline on a trip</div>
+      </div>
+    </div>
+  </div>
+</div><br>
+
+<div class="container">    
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Entrepreneurial</div>
+        <a href="/entrepreneurial">        
+        <div class="panel-body"><img src="/Photos/entrepreneur.png" style="width:100%" alt="Entreprenuerial Image"></div>
+        </a>
+        <div class="panel-footer">Entreprenuerish</div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-primary">
+        <div class="panel-heading">Religious</div>
+          <a href="/religious">
+        <div class="panel-body"><img src="/Photos/religion.jpg" class="img-responsive" style="width:100%" alt="Religious Image"></div>
+        </a>
+        <div class="panel-footer">Spread a good word</div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-primary">
+        <div class="panel-heading">Family</div>
+        <a href="/family">
+        <div class="panel-body"><img src="/Photos/family.jpg" class="img-responsive" style="width:100%" alt="Family Image"></div>
+        </a>
+        <div class="panel-footer">Show how much you love your family </div>
+
+    
+      </div>
+    </div>
+  </div>
+</div><br><br>
+
+-->
+<!-- Footer -->
+
+<%- include('./footer.ejs');%>
+
+<!-- <script src="/publics/functionality.js"></script> -->
+</body>
+</html>
